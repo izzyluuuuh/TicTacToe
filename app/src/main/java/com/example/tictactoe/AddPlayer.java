@@ -17,11 +17,6 @@ public class AddPlayer extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_add_player);
 
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            return insets;
-
             EditText playerOne = findViewById(R.id.playerOne);
             EditText playerTwo = findViewById(R.id.playerTwo);
             Button startGameBtn = findViewById(R.id.startGameBtn);

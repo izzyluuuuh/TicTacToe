@@ -20,12 +20,6 @@ public class ResultsDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_results_dialog);
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            return insets;
 
             TextView messageText = findViewById(R.id.messageText);
             Button startAgainButton = findViewById(R.id.startAgainBtn);

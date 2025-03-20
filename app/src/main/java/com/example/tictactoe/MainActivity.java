@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(R.drawable.ximage);
             if (checkResults()) {
                 ResultsDialog resultsDialog = new ResultsDialog(MainActivity.this, binding.playerOneName.getText().toString()
-                        + " is a Winner!", MainActivity.this);
+                        + " is the Winner!", MainActivity.this);
                 resultsDialog.setCancelable(false);
                 resultsDialog.show();
             } else if(totalSelectedBoxes == 9) {
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(R.drawable.oimage);
             if (checkResults()) {
                 ResultsDialog resultsDialog = new ResultsDialog(MainActivity.this, binding.playerTwoName.getText().toString()
-                        + " is a Winner!", MainActivity.this);
+                        + " is the Winner!", MainActivity.this);
                 resultsDialog.setCancelable(false);
                 resultsDialog.show();
             } else if(totalSelectedBoxes == 9) {
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void restartMatch(){
-        boxPositions = new int[] {0,0,0,0,0,0,0,0,0}; //9 zero
+        boxPositions = new int[] {0,0,0,0,0,0,0,0,0}; // 9 zero
         playerTurn = 1;
         totalSelectedBoxes = 1;
 
