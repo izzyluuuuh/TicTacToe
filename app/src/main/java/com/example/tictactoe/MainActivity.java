@@ -3,7 +3,6 @@ package com.example.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 
 import com.example.tictactoe.databinding.ActivityMainBinding;
@@ -40,77 +39,50 @@ public class MainActivity extends AppCompatActivity {
         binding.playerOneName.setText(getPlayerOneName);
         binding.playerTwoName.setText(getPlayerTwoName);
 
-        binding.image1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isBoxSelectable(0)){
-                    performAction((ImageView) view, 0);
-                }
+        binding.image1.setOnClickListener(view -> {
+            if (isBoxSelectable(0)){
+                performAction((ImageView) view, 0);
             }
         });
 
-        binding.image2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isBoxSelectable(1)){
-                    performAction((ImageView) view, 1);
-                }
+        binding.image2.setOnClickListener(view -> {
+            if (isBoxSelectable(1)){
+                performAction((ImageView) view, 1);
             }
         });
-        binding.image3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isBoxSelectable(2)){
-                    performAction((ImageView) view, 2);
-                }
+        binding.image3.setOnClickListener(view -> {
+            if (isBoxSelectable(2)){
+                performAction((ImageView) view, 2);
             }
         });
-        binding.image4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isBoxSelectable(3)){
-                    performAction((ImageView) view, 3);
-                }
+        binding.image4.setOnClickListener(view -> {
+            if (isBoxSelectable(3)){
+                performAction((ImageView) view, 3);
             }
         });
-        binding.image5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isBoxSelectable(4)){
-                    performAction((ImageView) view, 4);
-                }
+        binding.image5.setOnClickListener(view -> {
+            if (isBoxSelectable(4)){
+                performAction((ImageView) view, 4);
             }
         });
-        binding.image6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isBoxSelectable(5)){
-                    performAction((ImageView) view, 5);
-                }
+        binding.image6.setOnClickListener(view -> {
+            if (isBoxSelectable(5)){
+                performAction((ImageView) view, 5);
             }
         });
-        binding.image7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isBoxSelectable(6)){
-                    performAction((ImageView) view, 6);
-                }
+        binding.image7.setOnClickListener(view -> {
+            if (isBoxSelectable(6)){
+                performAction((ImageView) view, 6);
             }
         });
-        binding.image8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isBoxSelectable(7)){
-                    performAction((ImageView) view, 7);
-                }
+        binding.image8.setOnClickListener(view -> {
+            if (isBoxSelectable(7)){
+                performAction((ImageView) view, 7);
             }
         });
-        binding.image9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isBoxSelectable(8)){
-                    performAction((ImageView) view, 8);
-                }
+        binding.image9.setOnClickListener(view -> {
+            if (isBoxSelectable(8)){
+                performAction((ImageView) view, 8);
             }
         });
 
@@ -177,11 +149,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isBoxSelectable(int boxPosition) {
-        boolean response = false;
-        if (boxPositions[boxPosition] == 0) {
-            response = true;
-        }
-        return response;
+        return boxPositions[boxPosition] == 0;
     }
 
     public void restartMatch(){
