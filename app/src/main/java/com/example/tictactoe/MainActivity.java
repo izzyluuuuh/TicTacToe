@@ -1,12 +1,9 @@
 package com.example.tictactoe;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.ImageView;
-
 import com.example.tictactoe.databinding.ActivityMainBinding;
-
 import java.util.ArrayList;
 import java.util.List;
 

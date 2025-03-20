@@ -20,6 +20,7 @@ public class ResultsDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_results_dialog);
 
             TextView messageText = findViewById(R.id.messageText);
             Button startAgainButton = findViewById(R.id.startAgainBtn);
