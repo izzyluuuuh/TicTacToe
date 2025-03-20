@@ -3,16 +3,9 @@ package com.example.tictactoe;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-//import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
-//import androidx.appcompat.app.AppCompatActivity;
-//import androidx.core.graphics.Insets;
-//import androidx.core.view.ViewCompat;
-//import androidx.core.view.WindowInsetsCompat;
 
 public class ResultsDialog extends Dialog {
 
@@ -37,12 +30,9 @@ public class ResultsDialog extends Dialog {
             TextView messageText = findViewById(R.id.messageText);
             Button startAgainButton = findViewById(R.id.startAgainBtn);
             messageText.setText(message);
-            startAgainButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    mainActivity.restartMatch();
-                    dismiss();
-                }
-        });
+            startAgainButton.setOnClickListener(view -> {
+                mainActivity.restartMatch();
+                dismiss();
+            });
     }
 }
